@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.PostsTest" time="7.467" tests="19" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\teste_api_poc_java\api-automation\target\test-classes;C:\teste_api_poc_java\api-automation\target\classes;C:\Users\Francisco\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Francisco\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Francisco\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Francisco\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Francisco\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Francisco\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Francisco\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Francisco\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Francisco\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Francisco\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Francisco\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Francisco\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\json-schema-validator\5.3.2\json-schema-validator-5.3.2.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Francisco\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Francisco\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Francisco\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Francisco\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Francisco\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Francisco\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Francisco\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\Francisco\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Francisco\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Francisco\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Francisco\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Francisco\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Francisco\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Francisco\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Francisco\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Francisco\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Francisco\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Francisco\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Francisco\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Francisco\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Francisco\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Francisco\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Francisco\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Francisco\AppData\Local\Temp\surefire1197999834474203804\surefirebooter-20260209185208126_3.jar C:\Users\Francisco\AppData\Local\Temp\surefire1197999834474203804 2026-02-09T18-52-07_829-jvmRun1 surefire-20260209185208126_1tmp surefire_0-20260209185208126_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\teste_api_poc_java\api-automation\target\test-classes;C:\teste_api_poc_java\api-automation\target\classes;C:\Users\Francisco\.m2\repository\io\rest-assured\rest-assured\5.3.2\rest-assured-5.3.2.jar;C:\Users\Francisco\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Francisco\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Francisco\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Francisco\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Francisco\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Francisco\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Francisco\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Francisco\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Francisco\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\json-path\5.3.2\json-path-5.3.2.jar;C:\Users\Francisco\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\rest-assured-common\5.3.2\rest-assured-common-5.3.2.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\xml-path\5.3.2\xml-path-5.3.2.jar;C:\Users\Francisco\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Francisco\.m2\repository\io\rest-assured\json-schema-validator\5.3.2\json-schema-validator-5.3.2.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Francisco\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Francisco\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Francisco\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Francisco\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Francisco\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Francisco\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Francisco\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Francisco\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\Francisco\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Francisco\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Francisco\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Francisco\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Francisco\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Francisco\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Francisco\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Francisco\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Francisco\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Francisco\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Francisco\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Francisco\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Francisco\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Francisco\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Francisco\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Francisco\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Francisco"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\teste_api_poc_java\api-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Francisco\AppData\Local\Temp\surefire1197999834474203804\surefirebooter-20260209185208126_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="Francisco"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Francisco\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\FRANCI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\teste_api_poc_java\api-automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Ruby32-x64\bin;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%C:\Program Files\OpenSSL-Win64\bin;C:\Program Files\dotnet\;C:\Program Files\OpenSSL-Win64\bin;C:\chromedriver-win64;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Francisco\AppData\Local\Android\Sdk\platform-tools;C:\Users\Francisco\AppData\Local\Android\Sdk\tools;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17\bin;C:\apache-jmeter-5.6.3\bin;C:\Program Files\Google\Chrome\Application\135.0.7049.42;C:\Program Files\Google\Chrome\Application;C:\chromedriver-win64;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\apache-maven-3.9.12\bin;C:\Program Files\Apache\maven\bin;C:\Users\Francisco\AppData\Local\Microsoft\WindowsApps;C:\Users\Francisco\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Francisco\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\Francisco\AppData\Roaming\npm;C:\Users\Francisco\AppData\Local\GitHubDesktop\bin;C:\Users\Francisco\.dotnet\tools;C:\Program Files\apache-maven-3.9.12\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="shouldUpdatePostCompletely" classname="tests.PostsTest" time="3.44">
+    <system-out><![CDATA[==============================================
+Base URL: https://jsonplaceholder.typicode.com
+==============================================
+Request URI:	https://jsonplaceholder.typicode.com/posts/1
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldSanitizeXSSInBody" classname="tests.PostsTest" time="0.26">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-008: Gap de seguranca - XSS nao sanitizado no body
+]]></system-out>
+  </testcase>
+  <testcase name="shouldMatchJsonSchema" classname="tests.PostsTest" time="0.611">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/1
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnPostById" classname="tests.PostsTest" time="0.133">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/1
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldPatchPostPartially" classname="tests.PostsTest" time="0.18">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/1
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldSanitizeXSSInTitle" classname="tests.PostsTest" time="0.194">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-007: Gap de seguranca - XSS nao sanitizado no title
+Impacto: Em producao, permitiria execucao de scripts maliciosos em frontend
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404ForNonExistentPost" classname="tests.PostsTest" time="0.063">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/99999
+HTTP/1.1 404 Not Found
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectPostWithoutBody" classname="tests.PostsTest" time="0.175">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-003: Gap de validacao - API aceita POST sem body (esperado 400)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn100PostsWithCorrectStructure" classname="tests.PostsTest" time="0.253">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectInvalidUserIdType" classname="tests.PostsTest" time="0.183">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-005: Gap de validacao - API aceita userId string (esperado 400)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldFilterByUserId" classname="tests.PostsTest" time="0.074">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts?userId=1
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldDeletePost" classname="tests.PostsTest" time="0.174">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/1
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldHandleInvalidIdType" classname="tests.PostsTest" time="0.059">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/abc
+HTTP/1.1 404 Not Found
+BUG-001: API retorna 404 (esperado 400 para tipo invalido)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectPostWithoutTitle" classname="tests.PostsTest" time="0.178">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-002: Gap de validacao - API aceita POST sem title (esperado 400)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectPostWithoutUserId" classname="tests.PostsTest" time="0.167">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-004: Gap de validacao - API aceita POST sem userId (esperado 400)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldRejectEmptyPayload" classname="tests.PostsTest" time="0.174">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+BUG-006: Gap de validacao - API aceita payload vazio (esperado 400)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404OnDeleteNonExistent" classname="tests.PostsTest" time="0.172">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts/99999
+HTTP/1.1 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="shouldBlockSQLInjection" classname="tests.PostsTest" time="0.041">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts?userId=1%27%20OR%20%271%27%3D%271
+HTTP/1.1 200 OK
+PASS: API trata SQL Injection corretamente
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreatePostWithValidPayload" classname="tests.PostsTest" time="0.193">
+    <system-out><![CDATA[Request URI:	https://jsonplaceholder.typicode.com/posts
+HTTP/1.1 201 Created
+]]></system-out>
+  </testcase>
+</testsuite>

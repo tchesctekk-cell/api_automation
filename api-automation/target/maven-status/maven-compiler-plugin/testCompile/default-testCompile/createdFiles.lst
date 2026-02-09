@@ -1,0 +1,8 @@
+base\BaseTest.class
+tests\PostsTest.class
+models\Post.class
+models\User.class
+clients\PostsClient.class
+clients\UsersClient.class
+utils\TestDataFactory.class
+tests\UsersTest.class
