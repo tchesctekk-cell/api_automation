@@ -1,14 +1,12 @@
 
 
-# Automacao API JSONPlaceholder - QA Senior
+# Automacao API JSONPlaceholder - 
 
-Projeto de automacao de testes para API JSONPlaceholder desenvolvido como parte de avaliacao tecnica.
+Projeto de automacao de testes para API JSONPlaceholder.
 
 ## Contexto Importante
 
 A API JSONPlaceholder (https://jsonplaceholder.typicode.com) e uma **API publica simulada** (fake) para fins de prototipacao e aprendizado. 
-
-Os bugs documentados neste projeto representam **gaps de validacao** comuns em APIs reais e servem para demonstrar **capacidade analitica e visao de risco**, nao como falhas inesperadas do servico.
 
 ---
 
@@ -191,157 +189,6 @@ Os testes de SQL Injection e XSS foram incluidos para **demonstrar capacidade de
 
 Garante contrato. Mudancas na estrutura da API sao detectadas automaticamente sem precisar alterar asserts manuais.
 
----
-
-## Bugs Documentados
-
-Total: **8 bugs**
-
-### Contexto Importante
-
-Os bugs listados representam **gaps de validacao** em uma API fake. Em ambiente de producao, seriam bugs criticos/altos, mas no contexto de uma API de prototipacao, sao comportamentos esperados documentados para fins didaticos.
-
-### Bugs Criticos (2)
-
-- **BUG-007:** XSS nao sanitizado no title  
-- **BUG-008:** XSS nao sanitizado no body
-
-**Impacto em producao:** Permitiria execucao de scripts maliciosos em aplicacoes frontend.
-
-### Bugs Altos (4)
-
-- **BUG-002:** API aceita POST sem campo title  
-- **BUG-003:** API aceita POST sem campo body  
-- **BUG-004:** API aceita POST sem campo userId  
-- **BUG-006:** API aceita payload vazio
-
-**Impacto em producao:** Criacao de dados invalidos/incompletos.
-
-### Bugs Medios (2)
-
-- **BUG-001:** API retorna 404 para ID string ao inves de 400  
-- **BUG-005:** API aceita userId como string
-
-**Impacto em producao:** Mensagens de erro confusas para consumidores da API.
-
-**Detalhes completos:** `docs/Plano_Teste_JSONPlaceholder_API.xlsx` (Aba BUGS)
-
----
-
-## Rastreabilidade
-
-Matriz completa vinculando:
-```
-Caso de Teste <-> Codigo Java <-> Request Postman <-> Bug
-```
-
-**Exemplo:**
-```
-TC-006 <-> PostsTest.shouldRejectPostWithoutTitle() <-> POST Without Title <-> BUG-002
-```
-
-**Arquivo:** `docs/Plano_Teste_JSONPlaceholder_API.xlsx` (Aba MATRIZ_RASTREABILIDADE)
-
----
-
-## Restricoes do Ambiente
-
-### 1. Ausencia de Persistencia Real
-
-API retorna fake responses. Dados nao sao realmente criados/alterados.
-
-### 2. Sem Acesso a Banco
-
-Impossivel validar dados persistidos.
-
-### 3. Sem Documentacao Formal
-
-API nao possui Swagger/OpenAPI. Testes baseados em observacao.
-
-**Consequencia:** Foco em validacao de contrato e comportamento observavel.
-
----
-
-## Relatorios
-
-### Java (JUnit)
-```bash
-mvn clean test
-# Relatorio: target/surefire-reports/
-```
-
-### Postman (Newman)
-```bash
-cd postman
-./run-newman.sh
-# Relatorios: reports/newman-report.html
-```
-
----
-
-## Melhorias Futuras
-
-1. Integracao CI/CD (GitHub Actions)
-2. Testes parametrizados (@ParameterizedTest)
-3. Allure Reports
-4. Cobertura de endpoints restantes (/comments, /albums)
-
-**Detalhes:** `docs/Plano_Teste_JSONPlaceholder_API.xlsx` (Aba MELHORIAS_FUTURAS)
-
----
-
-## Contato
-
-**Nome:** [Seu Nome]  
-**Email:** [Seu Email]  
-**GitHub:** [Usuario]  
-**LinkedIn:** [Perfil]
-
----
-
-## Observacao Final
-
-Este projeto foi desenvolvido com foco em **qualidade tecnica**, **organizacao** e **rastreabilidade**, demonstrando capacidades esperadas de um QA Senior:
-
-- Visao de risco e priorizacao
-- Arquitetura de automacao escalavel
-- Documentacao tecnica completa
-- Pensamento critico sobre seguranca
-- Separacao de responsabilidades no codigo
-
-A entrega esta pronta para:
-- `mvn clean test` (executa todos os testes Java)
-- `newman run collection.json` (executa testes Postman)
-- Integracao em pipeline CI/CD
-```
-
----
-
-## 3. EXCEL - ADICIONAR NOTA SOBRE API FAKE
-
-### ABA PLANO_TESTE - ADICIONAR APOS "OBJETIVO":
-```
-CONTEXTO DA API
-
-A API JSONPlaceholder e uma API publica simulada (fake) desenvolvida para fins de 
-prototipacao, aprendizado e testes. Por design, ela:
-
-- Nao persiste dados realmente
-- Retorna respostas simuladas (fake responses)
-- Nao possui validacoes rigorosas de entrada
-- Nao implementa seguranca de producao
-
-IMPLICACAO PARA OS TESTES
-
-Os bugs documentados neste projeto representam gaps de validacao e riscos de seguranca 
-que EXISTIRIAM em uma API real de producao. Eles sao documentados com objetivo:
-
-1. Tecnico: Demonstrar capacidade de identificar vulnerabilidades
-2. Educacional: Simular analise de risco em ambiente seguro
-3. Profissional: Mostrar visao de qualidade alem do funcional
-
-Nao sao falhas inesperadas do servico JSONPlaceholder, mas comportamentos esperados 
-em uma API de prototipacao.
 
 
 
@@ -798,4 +645,5 @@ Resultado Esperado:
 - Sanitizado ou rejeitado
 Evidencia: screenshots/BUG-008.png
 Sugestao Correcao: Mesma do BUG-007 aplicada ao body
+
 Ambiente: jsonplaceholder.typicode.com
